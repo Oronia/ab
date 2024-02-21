@@ -1,0 +1,239 @@
+
+
+:root
+{
+    --margin: 10px;
+    
+    --colorWhite: #f2f2f2; // #d6d6d6;
+    --colorBright: #ffffff;
+    --colorBlack: #1f1f1f;
+    --colorYelight: #eae8dd;
+    --colorYeldark: #e1decd; // #e2dec7;
+    --colorDarkblue: #002b64;
+    --colorLightblue: #105fae;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.screen
+{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: var(--colorWhite);
+}
+
+.head
+{
+    width: calc(100% - (var(--margin) * 2));
+    height: 50px;
+    
+    padding: 0 var(--margin);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    z-index: 1;
+    
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    box-shadow: 0 0 5px rgb(0,0,0, 0.1);
+}
+
+.header
+{
+    padding: 0 10px;
+    font-weight: 500;
+    
+    color: white;
+    background-color: #003568;
+}
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.space
+{
+    height: 20px;
+}
+
+.block
+{
+    margin: 0;
+    width: 100vw;
+    overflow:scroll;
+}
+
+.marginBlock
+{
+    /* allow child to use 100% */
+    
+    margin: var(--margin);
+    // border: 1px solid grey;
+}
+
+.imageBlock
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    overflow:hidden;
+}
+
+.headImage
+{
+    position: relative;
+    right: 0;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textHead
+{
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.divideFlex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textPara
+{
+    font-size: 12px;
+    text-align: center;
+    line-height: 150%;
+}
+
+.navContainer
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 0 5px rgb(0,0,0,0.05);
+    box-shadow: 0 0 5px rgb(0,0,0,0.02) inset;
+    background-color: var(--colorYeldark);
+}
+
+.navItem
+{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 -0.1px 0 grey inset;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: grey;
+}
+
+
+
+table
+{
+    border-radius: 10px 10px 0 0;
+    border-collapse: collapse;
+    
+    background-color: var(--colorYelight);
+}
+
+td
+{
+    padding: 10px;
+    outline: 0.1px solid white;
+}
+
+tr:nth-child(even)
+{
+    background-color: var(--colorYeldark);
+}
+
+.tableAdd
+{
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    background-color: var(--colorYeldark); 
+    border-radius: 0 0 10px 10px;
+    outline: 0.1px solid white;
+}
+
+
+
+
+
+
+/*
+
+box-shadow: 10px 10px 5px lightblue inset;
+
+
+.flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; //  (-) Horizontally centerX
+      align-items: center; //  (|) Vertically centerY
+      background-color: lightgray;
+      padding: 10px;
+      overflow: scroll;
+      
+      background:grey;
+    }
+    
+    .flex-item {
+      border-radius: 10px;
+      flex: 0 0 auto;
+      background-color: lightblue;
+      width: 10px;
+      padding: 20px;
+      margin: 10px;
+    }   
+
+animation-name: openup;
+animation-duration: 1s;    
+
+@keyframes openup
+{
+    0% 
+    {
+        filter: opacity(0);
+    }
+    100%
+    {
+        filter: opacity(1);
+    }
+}
+
+*/
+
