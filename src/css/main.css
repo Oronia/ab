@@ -242,15 +242,20 @@ b
 .grid1
 {
     display:grid; 
-    gap: 0px;
+    gap: 0;
     grid-template-columns: auto auto auto ;
-}
 
+}
 .gridItems1
 {
-    // outline: 1px solid black;
     text-align: center;
-    padding-left: 5px;
+    padding: 5px 0;
+    font-size: 12px;
+    // outline: 1px solid black;
+}
+.gridGap
+{
+    margin-top: 15px;
 }
 
 
