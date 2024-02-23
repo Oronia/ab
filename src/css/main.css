@@ -248,14 +248,14 @@ b
 }
 .gridItems1
 {
-    text-align: center;
+    text-align: left;
     padding: 5px 0;
     font-size: 12px;
     // outline: 1px solid black;
 }
 .gridGap
 {
-    margin-top: 15px;
+    // margin-top: 15px;
 }
 
 
